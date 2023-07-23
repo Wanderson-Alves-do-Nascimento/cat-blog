@@ -1,0 +1,162 @@
+:root {
+  font-size: 62.5%;
+  --clr-blue-700: #387E96;
+  --clr-blue-800: #065E7C;
+  --clr-gray-100: #F4FCFF;
+  --clr-gray-800: #202024;
+  --clr-gray-900: #121214;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: 1.6rem;
+  font-family: Mulish, sans-serif;
+}
+#blog {
+  min-height: 100vh;
+}
+
+header {
+  height: 7.2rem;
+  padding: 1.6rem 2.8rem;
+  
+  background-color: var(--clr-blue-800);
+}
+nav {
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon {
+  height: 4rem;
+  width: 4rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+form {
+  width: 75%;
+}
+form label {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+}
+form input {
+  height: 4rem;
+  width: 100%;
+  border: none;
+  border-radius: .4rem;
+  background: rgba(255, 255, 255, 0.20);
+}
+form input::placeholder{
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+}
+section img {
+  max-width: 100%;
+}
+.main-post, .related-articles {
+  padding-inline: 2.2rem;
+}
+article {
+  margin-block: 3.2rem;
+}
+.main-post h1, h2 {
+  margin-top: 3.2rem;
+  color: var(--clr-gray-800);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+}
+
+.post-description {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+.buttons {
+  display: flex;
+  gap: 1.2rem;
+}
+.buttons button {
+  background-color: var(--clr-blue-800);
+  border: none;
+  border-radius: 50%;
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+}
+.articles article {
+  margin-top: 3.2rem;
+}
+.articles p {
+  color: var(--clr-gray-900);
+  line-height: 2.4rem;
+}
+.post {
+  display: grid;
+  gap: 1.6rem	;
+  grid-template-columns: 1fr 1fr;
+}
+.post img {
+  width: 100%;
+}
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+footer {
+  
+  background-color: var(--clr-blue-700);
+  height: 6.4rem;
+  padding: 1.6rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 764px){
+ #blog {
+  padding-inline: 10rem;
+}
+.main-post, .related-articles {
+  padding: 0;
+ }
+ section {
+  display: grid;
+  grid-template-areas: "A C" "B C";
+ }
+ img.main-img{
+  margin-top: 4.4rem;
+  grid-area: A;
+  border-radius: .4rem;
+}
+.main-post {
+  grid-area: B;
+  padding-right: 3.4rem;
+}
+.related-articles{
+  grid-area: C;
+}
+.post-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.related-articles {
+  max-width: 48rem;
+}
+
+}
