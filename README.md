@@ -24,7 +24,7 @@ We use this technologies to create the project:
 -  <img style="width: 24px; height: 24px" src="https://cdn.worldvectorlogo.com/logos/html-1.svg"> HTML
 - <img style="width: 24px; height: 24px" src="https://cdn.worldvectorlogo.com/logos/css-3.svg"> CSS
 
-## 💻 Projeto
+## 💻 Project
 
 This blog template content some sections to practice semântic HTML and  CSS displays in grid and flex layout.
 
