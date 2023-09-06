@@ -115,6 +115,7 @@ article {
   flex-direction: column;
   gap: 1.6rem;
 }
+
 footer {
   
   background-color: var(--clr-blue-700);
@@ -130,9 +131,6 @@ footer {
  #blog {
   padding-inline: 10rem;
 }
-.main-post, .related-articles {
-  padding: 0;
- }
  section {
   display: grid;
   grid-template-areas: "A C" "B C";
