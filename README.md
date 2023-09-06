@@ -36,6 +36,6 @@ You need to have an account on <a href="https://figma.com">Figma</a> to access i
 
 ## Licence
 
-The project 
+The project was submitted on MIT Licence.
 
 ---
